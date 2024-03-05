@@ -66,5 +66,19 @@
 
 
   <script src="./app.js"></script>
+  <script>
+    var icon = document.querySelector(".moon-icon");
+     icon.onclick = function(){
+       document.body.classList.toggle('light_mood');
+       if(document.body.classList.contains("light_mood")){
+        icon.src = "./images/icon-moon.svg";
+       }
+       else{
+        icon.src = "./images/icon-sun.svg";
+       }
+
+     };
+
+  </script>
 </body>
 </html>

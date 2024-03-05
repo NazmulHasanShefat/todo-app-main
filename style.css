@@ -11,19 +11,20 @@
     --BrightBlue: hsl(220, 98%, 61%);
     --CheckBackground: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
     /* Dark thime */
-    --VeryDarkBlue: hsl(235, 21%, 11%);
+    --background-color: hsl(235, 21%, 11%);
     --VeryDarkDesaturatedBlue: hsl(235, 24%, 19%);
-    --LightGrayishBlue: hsl(234, 39%, 85%);
-    --LightGrayishBlue: (hver)hsl(236, 33%, 92%);
+    --text-color: hsl(234, 39%, 85%);
+    --LightGrayishBlueHover:hsl(236, 33%, 92%);
     --DarkGrayishBlue: hsl(234, 11%, 52%);
     --VeryDarkGrayishBlue: hsl(233, 14%, 35%);
     --VeryDarkGrayishBlue: hsl(237, 14%, 26%);
-    /* light Thime */
-    --VeryLightGray: hsl(0, 0%, 98%);
-    --VeryLightGrayishBlue: hsl(236, 33%, 92%);
+}
+.light_mood{
+    --background-color: hsl(0, 0%, 98%);
+    --VeryDarkDesaturatedBlue: hsl(236, 33%, 92%);
     --LightGrayishBlue: hsl(233, 11%, 84%);
     --DarkGrayishBlue: hsl(236, 9%, 61%);
-    --VeryDarkGrayishBlue: hsl(235, 19%, 35%);
+    --text-color: hsl(235, 19%, 35%);
 }
 /* frist bckground */
 .first-background{
@@ -50,7 +51,7 @@
     width: 60%;
     height: 60px;
     font-size:1.2rem;
-    color:var(--VeryLightGray);
+    color: #fff;
     font-family: var(--heading_font);
     text-transform:uppercase;
     letter-spacing: 5px;
@@ -105,7 +106,7 @@
     position:absolute;
     width: 24px;
     height:24px;
-    border:1px solid var(--VeryLightGray);
+    border:1px solid var(--text-color);
     border-radius:50%;
     /* background-image:url("./images/icon-check.svg"); */
     background-size:100% 100%;
@@ -120,7 +121,7 @@
 .secent-background{
     height:420px;
     width:100%;
-    background-color: var(--VeryDarkBlue);
+    background-color: var(--background-color);
     display: flex;
     justify-content: center;
 }
@@ -137,7 +138,7 @@ ul li{
     height: 50px;
     border-bottom: 1px solid var(--VeryDarkGrayishBlue);
     font-size: 1rem;
-    color:var(--LightGrayishBlue);
+    /* color:var(--LightGrayishBlue); */
     list-style:none;
     padding-left:20px;
     display: flex;
@@ -154,7 +155,7 @@ ul li{
 .cercle{
     height: 24px;
     width:24px;
-    border:1px solid var(--VeryLightGray);
+    border:1px solid var(--text-color);
     border-radius:50%;
     margin-right:22px;
     display: flex;
@@ -169,6 +170,7 @@ ul li{
 }
 .list-content-text{
     width: 90%;
+    color:var(--text-color);
 }
 .crose-icon{
     height: 25px;
@@ -206,7 +208,7 @@ ul li:hover .crose-icon{
     cursor: pointer;
 }
 .left-items:hover{
-    color:var(--VeryLightGray);
+    color:var(--text-color);
 }
 .menu2-container{
     width: 100%;
@@ -232,7 +234,7 @@ ul li:hover .crose-icon{
     color:var(--BrightBlue);
 }
 .menu-pointed:hover{
-    color:var(--VeryLightGray);
+    color:var(--text-color);
 }
 /* add java script class all */
 .checked-background{
