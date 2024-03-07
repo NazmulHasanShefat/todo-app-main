@@ -11,7 +11,7 @@ let fuld_text = document.getElementById("input_box");
     let todou_text = fuld_text.value;
     toducoll.innerHTML = `
     <li class="mycheck"><div class="cercle"><img src="./images/icon-check.svg" class="check-image" alt=""></div>
-    <div class="list-content-text">list 1</div>
+    <div class="list-content-text">${todou_text}</div>
     <div class="crose-icon"><img src="./images/icon-cross.svg" alt=""></div>
     </li>
     `;
