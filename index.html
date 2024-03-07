@@ -25,9 +25,11 @@
        <div class="darkmood-button"><img src="./images/icon-sun.svg" class="moon-icon" alt=""></div>
     </div>
     <div class="data-input-fuld">
+      <form class="my_form" id="form">
       <div class="input_fuld_box">
         <input type="text" class="input_text" id="input_box">
       </div>
+    </form>
     </div>
   </div>
 </div>
@@ -40,7 +42,7 @@
     <li><div class="cercle"><img src="./images/icon-check.svg" class="check-image" alt=""></div><div class="list-content-text">list 4</div><div class="crose-icon"><img src="./images/icon-cross.svg" alt=""></div></li>
     <div class="function_menus">
       <div class="button-div1">
-        <p class="left-items">5 items left</p>
+        <div class="left-items"><p class="left-items-text">left-items</p></div>
       </div>
       <div class="button-div1 box-menu-2">
         <div class="menu2-container">
@@ -65,7 +67,6 @@
 
 
 
-  <script src="./app.js"></script>
   <script>
     var icon = document.querySelector(".moon-icon");
      icon.onclick = function(){
@@ -80,5 +81,6 @@
      };
 
   </script>
+   <script src="./app.js"></script>
 </body>
 </html>
