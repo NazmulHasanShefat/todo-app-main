@@ -27,6 +27,9 @@
     --text-color: hsl(235, 19%, 35%);
 }
 /* frist bckground */
+body{
+    background-color: var(--background-color);
+}
 .first-background{
     height: 200px;
     width:100%;
@@ -272,6 +275,9 @@ ul li:hover .crose-icon{
 }
 .clecked{
     text-decoration: line-through;
+}
+.line-throu_text_color{
+    color:var(--DarkGrayishBlue);
 }
 
 /* end javascript class */
