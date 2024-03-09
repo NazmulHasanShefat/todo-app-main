@@ -28,13 +28,14 @@ let fuld_text = document.getElementById("input_box");
     `;
    todo_list.appendChild(toducoll);
    updateLs();
-    }
+  }
 
    let close=toducoll.querySelector(".crose-icon");
    close.addEventListener("click", ()=>{
     toducoll.remove();
+    updateLs();
    });
-
+   
    let check_todu=toducoll.querySelector(".cercle");
    let check_icon=toducoll.querySelector(".check-image");
    let todo_text_color=toducoll.querySelector(".list-content-text");
@@ -54,11 +55,21 @@ let fuld_text = document.getElementById("input_box");
       arr.push({
         fuld_text:element.innerText,
         complete:element.classList.contains("checked-icon")
-
-      })
+      });
     });
     localStorage.setItem("todos",JSON.stringify(arr));
   }
+  // function store_check(){
+  //   let s_check =document.querySelectorAll(".checked-icon");
+  //   let arr=[];
+  //   s_check.forEach(element => {
+  //     arr.push({
+  //       fuld_text:element.innerText,
+  //       complete:element.classList.contains("checked-icon"),
+  //     });
+  //   });
+  //   localStorage.setItem("todos",JSON.stringify(arr));
+  // }
   
   // let check_icon = document.querySelectorAll(".check-image");
   // check_icon.forEach( function(e){
