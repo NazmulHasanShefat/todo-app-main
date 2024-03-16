@@ -35,15 +35,16 @@ let fuld_text = document.getElementById("input_box");
     toducoll.remove();
     updateLs();
    });
-   
+
+
    let check_todu=toducoll.querySelector(".cercle");
    let check_icon=toducoll.querySelector(".check-image");
    let todo_text_color=toducoll.querySelector(".list-content-text");
     check_todu.addEventListener("click", ()=>{
-      check_icon.classList.toggle("checked-icon");
-      check_todu.classList.toggle("checked-background");
-      toducoll.classList.toggle("clecked");
-      todo_text_color.classList.toggle("line-throu_text_color");
+      check_icon.classList.toggle("checked-icon")
+      check_todu.classList.toggle("checked-background")
+      toducoll.classList.toggle("clecked")
+      todo_text_color.classList.toggle("line-throu_text_color")
       updateLs();
     });
   };
@@ -54,7 +55,7 @@ let fuld_text = document.getElementById("input_box");
     pTag.forEach(element => {
       arr.push({
         fuld_text:element.innerText,
-        complete:element.classList.contains("checked-icon")
+        // complete:element.classList.toggle("cheked-icon"),
       });
     });
     localStorage.setItem("todos",JSON.stringify(arr));
